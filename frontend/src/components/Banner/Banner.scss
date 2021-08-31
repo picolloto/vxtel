@@ -1,0 +1,72 @@
+@import "../../shared/__variables.scss";
+
+.banner-container {
+    width: 100%;
+    background: $primary;
+    position: relative;
+    height: 400px;
+
+    .banner-content {
+        display: flex;
+        height: 100%;
+
+        .banner-text {
+            color: #fff;
+            padding: 2em;
+            z-index: 1;
+            max-width: 60%;
+            height: 100%;
+
+            h6 {
+                text-align: justify;
+            }
+
+            .btn {
+                bottom: 2rem;
+                padding: 1rem 4rem 1rem 4rem;
+                position: absolute;
+            }
+        }
+    
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 50px;
+            object-fit: cover;
+            max-width: 500px;
+            max-height: 350px;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .banner-content {
+            display: block;
+            flex-wrap: inherit;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        .banner-content {
+            .banner-text {
+                max-width: 100%;
+            }
+    
+            img {
+                max-width: 400px;
+                max-height: 250px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .banner-content {
+            img {
+                max-width: 300px;
+                max-height: 200px;
+                right: 10px;
+            }
+        }
+    }
+}

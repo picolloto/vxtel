@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+@import "../../shared/__variables.scss";
+
+nav.navbar {
+    .container-fluid {
+        display: block;
+        margin: 1em;
+        
+        .navbar-brand {
+            font-family: 'Londrina Shadow', cursive;
+            font-size: 50px;
+            font-weight: 500;
+            color: $primary;
+            transition: 0.3s;
+        }
+    
+        .navbar-brand:hover {
+            color: #b55903;
+        }
+    
+        .subtitle {
+            font-family: 'Nanum Gothic', sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: $primary;
+        }
+    }
+}

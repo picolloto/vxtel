@@ -1,0 +1,108 @@
+@import "../../shared/__variables.scss";
+
+.container-fluid {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    #header-plan {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        margin: 2em 0;
+        button.btn.btn-info {
+            background: #1E3F93;
+        }
+
+        h3 {
+            margin: 1em 0;
+            span {
+                color: $primary;
+            }
+        }
+    }
+
+    .card-deck{
+        justify-content: center;
+        .col-12 {
+            margin: 0 0 1em 0;
+            .card {
+                .card-title {
+                    font-size: 25px;
+                }
+                .minutes {
+                    text-align: end;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    font-size: 60px;
+                    font-weight: 700;
+                    span {
+                        font-size: 14px;
+                    }
+                }
+                .for-only {
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin: 0;
+                }
+                .price {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 1em;
+                    .card-text {
+                        font-size: 40px;
+                        font-weight: 600;
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .content {
+                    font-size: 12px;
+                }
+                .text-muted {
+                    font-size: 10px;
+                }
+                &-30{
+                    box-shadow: 0px 0px 8px 0px $primary;
+
+                    .minutes, .price, .card-title span:last-child {
+                        color: $primary;
+                    }
+                }
+                &-60{
+                    box-shadow: 0px 0px 8px 0px $secondary;
+
+                    .minutes, .price, .card-title span:last-child {
+                        color: $secondary;
+                    }
+                }
+                &-120 {
+                    box-shadow: 0px 0px 8px 0px $danger;
+
+                    .minutes, .price, .card-title span:last-child {
+                        color: $danger;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        .card-deck {
+          display: flex;
+          .row {
+            justify-content: center;
+            .col-12 {
+                min-width: 300px;
+                max-width: 350px;
+            }
+          }
+        }
+    }
+
+    @media  (max-width: 467px) {
+        #header-plan {
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@import "../../shared/__variables.scss";
+
+$white: #fff;
+
+body.modal-open {
+    padding-right: 0;
+}
+
+.modal{
+    .modal-header {
+        background: #1E3F93;
+        color: $white;
+    
+        button.close span{
+            color: $white;
+            font-weight: normal;
+            font-size: 28px;
+        }
+    }
+
+    .form-check #plan{
+        &-30 {
+            font-weight: 700;
+            color: $primary;
+        }
+        &-60 {
+            font-weight: 700;
+            color: $secondary;
+        }
+        &-120 {
+            font-weight: 700;
+            color: $danger;
+        }
+    }
+
+    .comparative .col-6{
+        text-align: center;
+        label {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        #with-plan{
+            font-weight: 700;
+            color: rgb(4, 118, 19);
+        }
+
+        #no-plan{
+            font-weight: 700;
+            color: $danger;
+        }
+
+
+    }
+
+}

@@ -1,0 +1,36 @@
+@import "../../shared/__variables.scss";
+
+$line: #cecece;
+
+h3 {
+    margin: 1em 0;
+    span {
+        color: $primary;
+    }
+}
+
+.table-borderless {
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    padding: 2em;
+
+    thead tr {
+        border-bottom: 1.5px solid $line;
+
+        th {
+            color: $secondary;
+        }
+    }
+
+    tbody tr {
+        border-bottom: 0.5px inset $line;
+    }
+}
+
+@media  (max-width: 467px) {
+    h3 {
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,15 @@
+@import "../../shared/__variables.scss";
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 2em;
+    background: $primary;
+    height: 50px;
+
+    p {
+        margin: 0;
+    }
+}

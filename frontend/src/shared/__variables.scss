@@ -1,0 +1,17 @@
+$primary: #E77812 !default;
+$secondary: #624EB1 !default;
+$danger: #CB1E29 !default;
+
+.btn {
+    &.btn-primary{
+        background: $primary;
+    }
+
+    &.btn-secondary{
+        background: $secondary;
+    }
+}
+
+#root {
+    overflow-x: hidden;
+}
